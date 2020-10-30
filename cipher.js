@@ -2,6 +2,9 @@ const cipher = {
 	firstLetter: 65,
 	sizelAlphabet: 26,
 	encode: function(offset, textEncodeDecode) {
+		if (!offset || Array.isArray(offset) || !textEncodeDecode || Array.isArray(textEncodeDecode)) {
+			throw new TypeError("Invalid parameters");
+		}
 		let sumEncode = '';
 		for(let i = 0; i < textEncodeDecode.length; i++) {
 		sumEncode += String.fromCharCode(((textEncodeDecode.charCodeAt(i) - cipher.firstLetter + offset) % cipher.sizelAlphabet) + cipher.firstLetter);
@@ -10,9 +13,12 @@ const cipher = {
 
 	},
 	decode: function(offset, textEncodeDecode) {
+		if (!offset || Array.isArray(offset) || !textEncodeDecode || Array.isArray(textEncodeDecode)) {
+			throw new TypeError("Invalid parameters");
+		}
 		let sumDecode = '';
 		for(let i = 0; i < textEncodeDecode.length; i++){
-		sumDecode += String.fromCharCode(((textEncodeDecode.charCodeAt(0) + cipher.firstLetter - offset) % cipher.sizelAlphabet) + cipher.firstLetter);
+		sumDecode += String.fromCharCode(((textEncodeDecode.charCodeAt(i) + cipher.firstLetter - offset) % cipher.sizelAlphabet) + cipher.firstLetter);
 		}
 		return sumDecode;
 	},
