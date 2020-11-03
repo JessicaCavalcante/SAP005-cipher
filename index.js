@@ -15,6 +15,17 @@ document.getElementById("decode").addEventListener("click", function () {
     document.getElementById("result-encode-decode").value = decode;
 });
 
+document.getElementById("copy").addEventListener("click", function () {
+    let copy = document.getElementById("result-encode-decode");
+    copy.select();
+    copy.setSelectionRange(0,99999);
+    document.execCommand("copy");
+});
+
+document.getElementById("clear").addEventListener("click", function () {
+    document.getElementById("result-encode-decode").value = '';
+});
+
 function upperCase(element) {
     element.value = element.value.toUpperCase();
 }
