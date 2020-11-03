@@ -1,0 +1,138 @@
+body{
+    background: linear-gradient(to right, #00cc00 0%, #0099ff 100%);
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+section{
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 550px;
+    height: 500px;
+    margin: auto;
+    display:flex;
+    background-color: #fff;
+}
+
+.transform-code-encode header h2{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.transform-code-encode header p{
+    margin: 20px 10px;
+    font-size: 17px;
+}
+
+.transform-code-encode label{
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input{
+    display: flex;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #a9a9a9;
+}
+
+input:focus{
+    border-color: #00cc00;
+}
+
+textarea{
+    float: left;
+    height: 70px;
+    width: 70%;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border-color: #a9a9a9;
+}
+
+button{
+    margin: 20px 10px;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 50px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+button#encode{
+    background-color: #00cc00;
+}
+
+button#decode{
+    background-color: #0099ff;
+}
+
+button#copy{
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 25px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    padding-left: 35px;
+    padding-top: 3px;
+    background-color: #a9a9a9;
+}
+
+button#copy .fa-copy{
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    color: black;
+}
+
+button#copy .fa-copy:hover{
+    color: green;
+}
+
+button#clear{
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 25px;
+    font-size: 13px;
+    padding-left: 35px;
+    padding-top: 3px;
+    background-color: #a9a9a9;
+}
+
+button#clear .fa-times-circle{
+    position: absolute;
+    left: 15px;
+    top: 25%;
+    color: black;
+}
+
+button#clear .fa-times-circle:hover{
+    color: red;
+}
+
+.footer-autorais{
+    position: relative;
+    bottom: 10px;
+    padding: 10px;
+    margin-top: 25px;
+    text-align: center;
+}
