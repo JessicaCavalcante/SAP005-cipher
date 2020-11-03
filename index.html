@@ -4,28 +4,29 @@
 		<meta charset="utf-8">
 		<title>Caesar Cipher</title>
 		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	</head>
 	<body>
 		<header>
-			<div class="content">
-			<h1>J7 Encode and Decode</h1>
+			<div>
+				<h1>J7 Encode and Decode</h1>
 			</div>
 		</header>
 		<section>
-			<div class="search-code-encode">
+			<div class="transform-code-encode">
 				<header>
 					<h2>Quer ter mais segurança na criação de uma senha para seu cartão ou e-mail ? Aqui é o seu lugar!</h2>
 					<p>Conheça o codificador de senha mais seguro do mercado, em alguns instantes, você terá um senha cifrada e segura. Sim, aqui você também poderá decifrar.</p>
 				</header>
 				<label for="text-encode-decode">Digite o que deseja cifrar ou decifrar.</label>
-				<input class="text-encode-decode" type="text" name="text-encode-decode" id="text-encode-decode">
-				<br>
+				<input class="text-encode-decode" type="text" name="text-encode-decode" id="text-encode-decode" autocomplete="off">
 				<label for="offset">Digite o número para deslocamento.</label>
 				<input class="offset" type="number" name="offset" id="offset">
-				<br>
-				<button type="submit" name="encode" id="encode">Encode</button>
-				<button type="submit" name="decode" id="decode">Decode</button>
-				<input class="result-encode-decode" type="text" name="result-encode-decode" id="result-encode-decode" readonly>
+				<button type="submit" name="encode" id="encode">Cifrar</button>
+				<button type="submit" name="decode" id="decode">Decifrar</button>
+				<textarea class="result-encode-decode" name="result-encode-decode" id="result-encode-decode" readonly></textarea>
+				<button type="submit" name="copy" id="copy">Copiar<i class="fas fa-copy"></i></button>
+				<button type="submit" name="clear" id="clear">Limpar<i class="far fa-times-circle"></i></button>
 			</div>
 		</section>
 		<footer>
