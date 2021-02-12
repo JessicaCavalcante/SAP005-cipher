@@ -4,6 +4,7 @@ const textEncodeDecode = document.getElementById("text-encode-decode");
 const offset = document.getElementById("offset");
 textEncodeDecode.focus();
 textEncodeDecode.addEventListener("keyup", function () {upperCase(textEncodeDecode)});
+textEncodeDecode.addEventListener("keyup", function () {removeSpecialCharts(textEncodeDecode)});
 
 document.getElementById("encode").addEventListener("click", function () {
     let encode = cipher.encode(Number(offset.value),textEncodeDecode.value);
@@ -11,7 +12,7 @@ document.getElementById("encode").addEventListener("click", function () {
 });
 
 document.getElementById("decode").addEventListener("click", function () {
-    let decode = cipher.decode(Number(offset.value),textEncodeDecode.value);
+    let decode = cipher.decode(Number(offset.value), textEncodeDecode.value);
     document.getElementById("result-encode-decode").value = decode;
 });
 
@@ -28,4 +29,14 @@ document.getElementById("clear").addEventListener("click", function () {
 
 function upperCase(element) {
     element.value = element.value.toUpperCase();
+}
+
+function removeSpecialCharts(element) {
+    element.value = element.value.replace(/[ÀÁÂÃÄÅ]/g,"A");
+    element.value = element.value.replace(/[ÉÈÊË]/g,"E");
+    element.value = element.value.replace(/[ÍÌÎÏ]/g,"I");
+    element.value = element.value.replace(/[ÓÒÕÔÖ]/g,"O");
+    element.value = element.value.replace(/[ÚÙÛÜ]/g,"U");
+    element.value = element.value.replace(/[Ç]/g,"C");
+    element.value = element.value.replace(/[0-9]/g,'');
 }

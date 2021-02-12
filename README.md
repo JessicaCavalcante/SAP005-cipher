@@ -26,8 +26,8 @@ com facilidade e não oferecem muita segurança na comunição, mas a cifra de C
 
 ## 2. Resumo do projeto
 
-A empresa J7 Encode and Decode foi criada para trazer segurança, modernidade e agilidade para usuários que buscam codificar senhas para cartão ou e-mail. Caso precise decodificar sua senha também poderá fazer.
-A empresa J7 Encode and Decode utiliza de uma das codificações mais segura e antiga, a famosa Cifra de César, que foi apresentada acima.
+A empresa (fictícia) J7 Encode and Decode foi criada para trazer segurança, modernidade e agilidade para usuários que buscam codificar senhas para cartão ou e-mail. Caso precise decodificar sua senha também poderá fazer.
+A empresa (fictícia) J7 Encode and Decode utiliza de uma das codificações mais segura e antiga, a famosa Cifra de César, que foi apresentada acima.
 
 ## 3. Planejamento
 
