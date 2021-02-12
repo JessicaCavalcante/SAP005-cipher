@@ -6,9 +6,14 @@ const cipher = {
 			throw new TypeError("Invalid parameters");
 		}
 		let sumEncode = '';
-		for(let i = 0; i < textEncodeDecode.length; i++) {
-		sumEncode += String.fromCharCode(((textEncodeDecode.charCodeAt(i) - cipher.firstLetter + offset) % cipher.sizelAlphabet) + cipher.firstLetter);
+		for (let i = 0; i < textEncodeDecode.length; i++) {
+			if (textEncodeDecode.charCodeAt(i) == 32) {
+				sumEncode += ' ';
+				continue;
+			}
+			sumEncode += String.fromCharCode(((textEncodeDecode.charCodeAt(i) - cipher.firstLetter + offset) % cipher.sizelAlphabet) + cipher.firstLetter);
 		}
+
 		return sumEncode;
 
 	},
@@ -17,9 +22,14 @@ const cipher = {
 			throw new TypeError("Invalid parameters");
 		}
 		let sumDecode = '';
-		for(let i = 0; i < textEncodeDecode.length; i++){
-		sumDecode += String.fromCharCode(((textEncodeDecode.charCodeAt(i) + cipher.firstLetter - offset) % cipher.sizelAlphabet) + cipher.firstLetter);
+		for (let i = 0; i < textEncodeDecode.length; i++) {
+			if (textEncodeDecode.charCodeAt(i) == 32) {
+				sumDecode += ' ';
+				continue;
+			}
+			sumDecode += String.fromCharCode(((textEncodeDecode.charCodeAt(i) + cipher.firstLetter - offset) % cipher.sizelAlphabet) + cipher.firstLetter);
 		}
+
 		return sumDecode;
 	},
 };
