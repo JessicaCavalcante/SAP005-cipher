@@ -29,6 +29,8 @@ com facilidade e não oferecem muita segurança na comunição, mas a cifra de C
 A empresa (fictícia) J7 Encode and Decode foi criada para trazer segurança, modernidade e agilidade para usuários que buscam codificar senhas para cartão ou e-mail. Caso precise decodificar sua senha também poderá fazer.
 A empresa (fictícia) J7 Encode and Decode utiliza de uma das codificações mais segura e antiga, a famosa Cifra de César, que foi apresentada acima.
 
+![cipher](./src/img/j7-encode-decode.png)
+
 ## 3. Planejamento
 
 A interface da J7 Encode and Decode foi desenhada inicialmente em uma folha de caderno, onde o nome da empresa ficaria no topo e centralizado, no meio da página e centralizado teríamos o nosso codificador/decodificador, onde temos os campos de input e o retorno da codificação/decodificação e por fim um rodapé também centralizado. Por seguinte, foi destrinchado o que deveria ser feito e divididos em tasks no Trello.
