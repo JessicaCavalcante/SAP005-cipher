@@ -52,8 +52,7 @@ A interface permite que o usuário digite uma palavra que deseja cifrar ou decif
 
 ## 5. J7 Encode and Decode
 
-Para acessar a aplicação, é só clicar no link abaixo:
-`<link>` : <https://jessicacavalcante.github.io/SAP005-cipher/>
+✨ Para acessar a aplicação [Clique aqui!](https://jessicacavalcante.github.io/SAP005-cipher/ ✨
 
 Para usar a aplicação é só acessar o link acima, onde possui uma breve explicação sobre os serviços da J7 Encode and Decode.
 No primeiro campo, deverá colocar a palavra que deseja cifrar ou decifrar, no segundo campo deverá colocar o deslocamento que deseja para cifrar ou decifrar, clicar no botão da função (Cifrar ou Decifrar) que deseja realizar e no campo abaixo terá o retorno da função.
