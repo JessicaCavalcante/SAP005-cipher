@@ -57,3 +57,12 @@ A interface permite que o usuário digite uma palavra que deseja cifrar ou decif
 Para usar a aplicação é só acessar o link acima, onde possui uma breve explicação sobre os serviços da J7 Encode and Decode.
 No primeiro campo, deverá colocar a palavra que deseja cifrar ou decifrar, no segundo campo deverá colocar o deslocamento que deseja para cifrar ou decifrar, clicar no botão da função (Cifrar ou Decifrar) que deseja realizar e no campo abaixo terá o retorno da função.
 Caso queira copiar o retorno da função, basta clicar no botão copiar.
+
+### Como rodar localmente
+
+1. Antes de mais nada, se assegure de ter um bom 📝 editor de texto, algo como o Visual Studio Code ou Atom.
+2. Para executar os comandos você precisará de um 🐚 UNIX Shell, que é um programa que interpreta linhas de comando (command-line interpreter) e também deve ter o git instalado. Se você usa um sistema operacional "UNIX-like", como GNU/Linux ou MacOS, você já tem um shell (terminal) instalado (e provavelmente o git também). Se você usa Windows pode baixar a versão completa do Cmder que inclue o Git bash, embora seja recomendado que você teste 🐧 GNU/Linux. Se tem Windows 10 ou superior pode usar o Windows Subsystem for Linux.
+3. Faça o 🍴 fork desse repositório.
+4. ⬇️ Clone o fork para seu computador (cópia local).
+5. 📦 Instale as dependências do projeto rodando o comando npm install. Mas antes disso tenha certeza de ter instalado o Node.js (que inclui o npm).
+6. Para ver a interface desse programa no navegador, use o comando npm start para iniciar o servidor web e entre na url http://localhost:5000 no seu navegador.
