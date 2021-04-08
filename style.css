@@ -19,7 +19,7 @@ body{
   -webkit-border-radius: 5px;
   border-radius: 5px;
   width: 50vw;
-  height: 82vh;
+  /*height: 82vh;*/
   margin: auto;
   display:flex;
   background-color: #fff;
@@ -164,7 +164,7 @@ button:focus{
    
   .section-page {
     width: 90vw;
-    height: 77vh;
+    /*height: 77vh;*/
   }
 
   .result-encode-decode {
@@ -234,7 +234,7 @@ button:focus{
    
   .section-page {
     width: 85vw;
-    height: 80vh;
+    /*height: 80vh;*/
   }
 
   .result-encode-decode {
