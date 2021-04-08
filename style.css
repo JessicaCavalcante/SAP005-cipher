@@ -1,6 +1,11 @@
 body{
   background: linear-gradient(to right, #00cc00 0%, #0099ff 100%);
   font-family: sans-serif;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-page {
@@ -159,7 +164,7 @@ button:focus{
    
   .section-page {
     width: 90vw;
-    height: 75vh;
+    height: 77vh;
   }
 
   .result-encode-decode {
