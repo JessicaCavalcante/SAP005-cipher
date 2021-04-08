@@ -1,138 +1,280 @@
 body{
-    background: linear-gradient(to right, #00cc00 0%, #0099ff 100%);
-    font-family: sans-serif;
+  background: linear-gradient(to right, #00cc00 0%, #0099ff 100%);
+  font-family: sans-serif;
 }
 
-h1{
-    text-align: center;
-    padding-top: 10px;
-    font-weight: normal;
+.title-page {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: normal;
+  font-size: 30px;
 }
 
-section{
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    width: 550px;
-    height: 500px;
-    margin: auto;
-    display:flex;
-    background-color: #fff;
+.section-page {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 50vw;
+  height: 82vh;
+  margin: auto;
+  display:flex;
+  background-color: #fff;
 }
 
-.transform-code-encode header h2{
-    margin: 10px;
-    font-size: 20px;
+.title-cipher {
+  margin: 10px;
+  font-size: 20px;
 }
 
-.transform-code-encode header p{
-    margin: 20px 10px;
-    font-size: 17px;
+.subtitle-cipher {
+  margin: 20px 10px;
+  font-size: 17px;
 }
 
-.transform-code-encode label{
-    margin: 10px;
-    font-size: 14px;
-    font-weight: bold;
+.label-cipher {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-input{
-    display: flex;
-    width: 80%;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    outline: 0;
-    border-width: 0 0 1px;
-    border-color: #a9a9a9;
+.text-encode-decode {
+  display: flex;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #a9a9a9;
+  font-size: 15px;
 }
 
-input:focus{
-    border-color: #00cc00;
+.text-encode-decode:focus{
+  border-color: #00cc00;
 }
 
-textarea{
-    float: left;
-    height: 70px;
-    width: 70%;
-    font-size: 20px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    border-color: #a9a9a9;
+.result-encode-decode {
+  float: left;
+  height: 60px;
+  width: 60%;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  border-color: #a9a9a9;
 }
 
-button{
-    margin: 20px 10px;
-    font-size: 15px;
-    color: #fff;
-    padding: 5px 50px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    cursor: pointer;
+.button-encode, .button-decode {
+  margin: 15px 10px;
+  font-size: 15px;
+  color: #fff;
+  padding: 5px 30px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 12vw;
+}
+
+.button-encode {
+  background-color: #00cc00;
+}
+
+.button-decode {
+  background-color: #0099ff;
+}
+
+.button-copy, .button-clear {
+  position: relative;
+  float: left;
+  width: 8vw;
+  height: 25px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+  padding-left: 20px;
+  padding-top: 3px;
+  background-color: #a9a9a9;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-copy .fa-copy{
+  position: absolute;
+  left: 8px;
+  top: 25%;
+  color: black;
+}
+
+.button-copy .fa-copy:hover{
+  color: green;
+}
+
+.button-clear .fa-times-circle{
+  position: absolute;
+  left: 8px;
+  top: 25%;
+  color: black;
+}
+
+.button-clear .fa-times-circle:hover{
+  color: red;
 }
 
 button:focus{
-    outline: none;
-}
-
-button#encode{
-    background-color: #00cc00;
-}
-
-button#decode{
-    background-color: #0099ff;
-}
-
-button#copy{
-    position: relative;
-    float: left;
-    width: 20%;
-    height: 25px;
-    margin-bottom: 5px;
-    font-size: 13px;
-    padding-left: 35px;
-    padding-top: 3px;
-    background-color: #a9a9a9;
-}
-
-button#copy .fa-copy{
-    position: absolute;
-    left: 20px;
-    top: 25%;
-    color: black;
-}
-
-button#copy .fa-copy:hover{
-    color: green;
-}
-
-button#clear{
-    position: relative;
-    float: left;
-    width: 20%;
-    height: 25px;
-    font-size: 13px;
-    padding-left: 35px;
-    padding-top: 3px;
-    background-color: #a9a9a9;
-}
-
-button#clear .fa-times-circle{
-    position: absolute;
-    left: 15px;
-    top: 25%;
-    color: black;
-}
-
-button#clear .fa-times-circle:hover{
-    color: red;
+  outline: none;
 }
 
 .footer-autorais{
-    position: relative;
+  position: relative;
+  bottom: 10px;
+  padding: 10px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 500px){
+  .title-page {
+    font-size: 20px;
+    margin-top: 3vh;
+  }
+
+  .title-cipher {
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .subtitle-cipher {
+    margin: 20px 10px;
+    font-size: 13px;
+  }
+
+  .label-cipher {
+    margin: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+   
+  .section-page {
+    width: 90vw;
+    height: 75vh;
+  }
+
+  .result-encode-decode {
+    height: 11vh;
+    width: 40vw;
+    font-size: 12px;
+  }
+
+  .text-encode-decode {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .button-encode, .button-decode {
+    margin: 5px 10px;
+    font-size: 15px;
+    padding: 5px 20px;
+    width: 30vw;
+    height: 5vh;
+  }
+
+  .button-copy, .button-clear {
+    width: 25%;
+    padding-left: 15px;
+    padding-top: 2px;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .button-copy .fa-copy{
+    left: 10px;
+  }
+  
+  .button-clear .fa-times-circle{
+    left: 10px;
+  }
+
+  .result-encode-decode {
+    width: 60%;
+  }
+
+  .footer-autorais{
     bottom: 10px;
-    padding: 10px;
-    margin-top: 25px;
+    margin-top: 7px;
     text-align: center;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px){
+  .title-page {
+    font-size: 25px;
+    margin-top: 2vh;
+  }
+
+  .title-cipher {
+    font-size: 17px;
+  }
+
+  .subtitle-cipher {
+    font-size: 15px;
+  }
+
+  .label-cipher {
+    font-size: 13px;
+  }
+   
+  .section-page {
+    width: 85vw;
+    height: 80vh;
+  }
+
+  .result-encode-decode {
+    height: 12vh;
+    width: 40vw;
+    font-size: 13px;
+  }
+
+  .text-encode-decode {
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .button-encode, .button-decode {
+    margin: 5px 10px;
+    font-size: 15px;
+    padding: 5px 20px;
+    width: 20vw;
+    height: 5vh;
+  }
+
+  .button-copy, .button-clear {
+    width: 15vw;
+    padding-left: 15px;
+    padding-top: 2px;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .button-copy .fa-copy{
+    left: 10px;
+  }
+  
+  .button-clear .fa-times-circle{
+    left: 10px;
+  }
+
+  .result-encode-decode {
+    width: 60%;
+  }
+
+  .footer-autorais{
+    bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
