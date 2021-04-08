@@ -32,11 +32,11 @@ function upperCase(element) {
 }
 
 function removeSpecialCharts(element) {
-    element.value = element.value.replace(/[ÀÁÂÃÄÅ]/g,"A");
-    element.value = element.value.replace(/[ÉÈÊË]/g,"E");
-    element.value = element.value.replace(/[ÍÌÎÏ]/g,"I");
-    element.value = element.value.replace(/[ÓÒÕÔÖ]/g,"O");
-    element.value = element.value.replace(/[ÚÙÛÜ]/g,"U");
-    element.value = element.value.replace(/[Ç]/g,"C");
-    element.value = element.value.replace(/[0-9]/g,'');
+    element.value = element.value.replace(/[ÀÁÂÃÄÅ@#$]/g,"A");
+    element.value = element.value.replace(/[ÉÈÊË@#$]/g,"E");
+    element.value = element.value.replace(/[ÍÌÎÏ@#$]/g,"I");
+    element.value = element.value.replace(/[ÓÒÕÔÖ@#$]/g,"O");
+    element.value = element.value.replace(/[ÚÙÛÜ@#$]/g,"U");
+    element.value = element.value.replace(/[Ç@#$]/g,"C");
+    element.value = element.value.replace(/[0-9@#$]/g,'');
 }
