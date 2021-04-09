@@ -3,7 +3,6 @@ import cipher from './cipher.js';
 const textEncodeDecode = document.getElementById("text-encode-decode");
 const offset = document.getElementById("offset");
 textEncodeDecode.focus();
-//textEncodeDecode.addEventListener("keyup", function () {upperCase(textEncodeDecode)});
 textEncodeDecode.addEventListener("keyup", function () {
   textEncodeDecode.value = removeSpecialCharts(textEncodeDecode.value);
 });
@@ -29,17 +28,8 @@ document.getElementById("clear").addEventListener("click", function () {
   document.getElementById("result-encode-decode").value = '';
 });
 
-/*function upperCase(element) {
-  console.log(element.value);
-  element.value = element.value.toUpperCase();
-  console.log(element.value);
-}*/
-
 function removeSpecialCharts(value) {
-  console.log(value, 'antes');
-  value = value.normalize("NFD")
-      .replace(/[\u0300-\u036f]/gi, "")
-      .replace(/[0-9@#$]/gi,'');
-  console.log(value, 'up');
-  return value;
+  return value.normalize("NFD")
+    .replace(/[\u0300-\u036f]/gi, "")
+    .replace(/[0-9@#$]/gi,'');
 }
