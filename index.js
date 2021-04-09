@@ -38,9 +38,8 @@ document.getElementById("clear").addEventListener("click", function () {
 function removeSpecialCharts(value) {
   console.log(value, 'antes');
   value = value.normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[0-9@#$]/g,'')
-      ;
+      .replace(/[\u0300-\u036f]/gi, "")
+      .replace(/[0-9@#$]/gi,'');
   console.log(value, 'up');
   return value;
 }
