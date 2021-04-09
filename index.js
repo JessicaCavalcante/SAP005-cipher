@@ -5,7 +5,7 @@ const offset = document.getElementById("offset");
 textEncodeDecode.focus();
 //textEncodeDecode.addEventListener("keyup", function () {upperCase(textEncodeDecode)});
 textEncodeDecode.addEventListener("keyup", function () {
-  textEncodeDecode.value = removeSpecialCharts(textEncodeDecode.value.toUpperCase());
+  textEncodeDecode.value = removeSpecialCharts(textEncodeDecode.value);
 });
 
 document.getElementById("encode").addEventListener("click", function () {
