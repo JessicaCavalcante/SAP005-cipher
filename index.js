@@ -38,6 +38,6 @@ function removeSpecialCharts(element) {
   element.value = element.value.normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/[0-9@#$]/g,'')
-      .toUpperCase();
+      //.toUpperCase();
   console.log(element.value);
 }
