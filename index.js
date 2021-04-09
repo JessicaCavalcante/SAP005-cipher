@@ -28,11 +28,15 @@ document.getElementById("clear").addEventListener("click", function () {
 });
 
 function upperCase(element) {
+  console.log(element.value);
   element.value = element.value.toUpperCase();
+  console.log(element.value);
 }
 
 function removeSpecialCharts(element) {
+  console.log(element.value);
   element.value = element.value.normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/[0-9@#$]/g,'');
+  console.log(element.value);
 }
