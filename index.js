@@ -5,7 +5,7 @@ const offset = document.getElementById("offset");
 textEncodeDecode.focus();
 //textEncodeDecode.addEventListener("keyup", function () {upperCase(textEncodeDecode)});
 textEncodeDecode.addEventListener("keyup", function () {
-  textEncodeDecode.value = removeSpecialCharts(textEncodeDecode.value);
+  textEncodeDecode.value = removeSpecialCharts(textEncodeDecode.value.toUpperCase());
 });
 
 document.getElementById("encode").addEventListener("click", function () {
@@ -40,7 +40,7 @@ function removeSpecialCharts(value) {
   value = value.normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/[0-9@#$]/g,'')
-      .toUpperCase();
+      ;
   console.log(value, 'up');
   return value;
 }
