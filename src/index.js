@@ -7,32 +7,32 @@ textEncodeDecode.addEventListener("keyup", function () {upperCase(textEncodeDeco
 textEncodeDecode.addEventListener("keyup", function () {removeSpecialCharts(textEncodeDecode)});
 
 document.getElementById("encode").addEventListener("click", function () {
-    let encode = cipher.encode(Number(offset.value),textEncodeDecode.value);
-    document.getElementById("result-encode-decode").value = encode;
+  let encode = cipher.encode(Number(offset.value),textEncodeDecode.value);
+  document.getElementById("result-encode-decode").value = encode;
 });
 
 document.getElementById("decode").addEventListener("click", function () {
-    let decode = cipher.decode(Number(offset.value), textEncodeDecode.value);
-    document.getElementById("result-encode-decode").value = decode;
+  let decode = cipher.decode(Number(offset.value), textEncodeDecode.value);
+  document.getElementById("result-encode-decode").value = decode;
 });
 
 document.getElementById("copy").addEventListener("click", function () {
-    let copy = document.getElementById("result-encode-decode");
-    copy.select();
-    copy.setSelectionRange(0,99999);
-    document.execCommand("copy");
+  let copy = document.getElementById("result-encode-decode");
+  copy.select();
+  copy.setSelectionRange(0,99999);
+  document.execCommand("copy");
 });
 
 document.getElementById("clear").addEventListener("click", function () {
-    document.getElementById("result-encode-decode").value = '';
+  document.getElementById("result-encode-decode").value = '';
 });
 
 function upperCase(element) {
-    element.value = element.value.toUpperCase();
+  element.value = element.value.toUpperCase();
 }
 
 function removeSpecialCharts(element) {
-    element.value = element.value.normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/[0-9@#$]/g,'');
+  element.value = element.value.normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[0-9@#$]/g,'');
 }
