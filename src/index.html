@@ -20,7 +20,7 @@
         <p class="subtitle-cipher">Conheça o codificador de senha mais seguro do mercado, em alguns instantes, você terá um senha cifrada e segura. Sim, aqui você também poderá decifrar.</p>
       </header>
       <label for="text-encode-decode" class="label-cipher" >Digite o que deseja cifrar ou decifrar.</label>
-      <input class="text-encode-decode" type="text" name="text-encode-decode" id="text-encode-decode" autocomplete="off">
+      <input class="text-encode-decode" type="text" name="text-encode-decode" id="text-encode-decode" autocomplete="off" oninput="this.value = this.value.toUpperCase()">
       <label for="offset" class="label-cipher" >Digite o número para deslocamento.</label>
       <input class="text-encode-decode" type="number" name="offset" id="offset">
       <button type="submit" name="encode" class="button-encode" id="encode">Cifrar</button>
